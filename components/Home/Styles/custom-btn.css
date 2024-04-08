@@ -1,0 +1,13 @@
+.btn {
+  transition: all 0.5s ease-in-out;
+  @apply text-white py-3 px-6 text-[16px] font-medium uppercase inline-block border-0 rounded;
+}
+
+.btn-blue {
+  /* background-color: rgba(43, 2, 2, 0.9); */
+  @apply border-b-2 border-ujkol-yellow bg-gray-900;
+}
+.btn-blue:hover {
+  /* background-color: rgba(43, 2, 2, 0.75); */
+  @apply border-b-2 border-ujkol-yellow bg-gray-800;
+}

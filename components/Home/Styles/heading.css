@@ -1,0 +1,22 @@
+/* HEADINGS */
+.big-heading {
+  @apply bg-gradient-to-r from-ujkol-blue via-ujkol-dark to-ujkol-brown inline-block text-transparent bg-clip-text text-5xl md:text-center lg:text-left lg:text-[85px] font-black;
+}
+.h2-heading {
+  @apply text-3xl font-bold uppercase relative;
+}
+.h2-heading:before {
+  content: "";
+  @apply absolute w-1/5 h-1 bg-ujkol-yellow -bottom-1;
+}
+
+.h2-heading-2:before{
+  content: "";
+  @apply absolute w-[7%] h-1 bg-ujkol-yellow -bottom-1;
+}
+
+.campus-life:after {
+  content: "";
+  /* background-color: rgba(37, 99, 235, 0.7); */
+  @apply hidden md:flex absolute w-[40%] h-[70%]  top-24 overflow-hidden left-[17.5%] bg-blue-50 opacity-20 shadow;
+}

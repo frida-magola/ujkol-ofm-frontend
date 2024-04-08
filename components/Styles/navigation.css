@@ -1,0 +1,36 @@
+.navbar {
+  background: linear-gradient(
+    -210deg,
+    rgba(255, 255, 255, 0.65) 5%,
+    rgba(255, 255, 255, 0.8) 35%,
+    rgba(255, 255, 255, 0.15) 60%,
+    rgba(255, 255, 255, 0.12) 80%
+  );
+  @apply w-full fixed top-0 left-0 bg-transparent z-20;
+}
+
+.list-item {
+  @apply mr-4 text-sm font-bold text-ujkol-text uppercase transition-colors duration-500 flex items-center;
+}
+
+.list-item:hover {
+  @apply text-ujkol-dark;
+}
+
+.tfiangledown {
+  @apply pl-2 text-lg font-bold cursor-pointer;
+}
+
+.info-list-item {
+  @apply lg:mr-4 mr-2 font-bold text-white text-[10px] lg:text-[13px];
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+}
+.logo-img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,42 @@
+/* background: -moz-linear-gradient(
+  210deg,
+  rgba(249, 204, 32, 0.65) 5%,
+  rgba(0, 212, 255, 1) 50%,
+  rgba(168, 92, 80, 1) 130%
+); */
+.header {
+  background: linear-gradient(
+    -210deg,
+    rgba(255, 255, 255, 0.65) 5%,
+    rgba(255, 255, 255, 0.8) 35%,
+    rgba(43, 2, 2, 0.12) 80%
+  );
+
+  /* rgba(95, 206, 250, 0.65) 5%,
+  rgba(255, 255, 255, 0.8) 60%,
+  rgba(95, 206, 250, 0.65) 80% */
+  @apply relative w-full lg:min-h-[80vh] overflow-hidden py-0;
+}
+.hero-img {
+  background: url("../../../public/bg-hero.jpg") center center no-repeat;
+  @apply absolute w-full h-full object-cover mix-blend-overlay;
+}
+
+.btn-icon {
+  @apply text-2xl font-semibold text-white cursor-pointer;
+}
+
+.btn-icon-bg {
+  transition: all 0.5s ease-in-out;
+  @apply px-3 py-2 bg-gray-900 rounded-none;
+}
+.btn-icon-bg:hover {
+  @apply bg-gray-800 rounded;
+}
+.btn-icon-text {
+  @apply bg-ujkol-blue flex-1 px-3 py-2 hidden;
+}
+
+.bg-card {
+  background-color: rgb(170, 229, 252, 0.65);
+}
