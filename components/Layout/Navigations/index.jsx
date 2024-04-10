@@ -1,15 +1,19 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { CldImage } from "next-cloudinary";
 import "../../styles/navigation.css";
 import { TfiAlignRight, TfiAngleDown } from "react-icons/tfi";
 
-export const NavBar = (props) => {
+export const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header className="relative ">
-      <nav className="navbar border-b border-ujkol-brown shadow-sm">
-        <div className="py-6 px-5 lg:px-10">
+      <nav className="navbar border-b relative border-ujkol-brown shadow-sm">
+        <div className="py-6 lg:mt-6 px-5 lg:px-10">
           <div className="w-full lg:w-[90%] mx-auto">
             <div className="flex justify-between items-center">
               <div>
@@ -18,14 +22,14 @@ export const NavBar = (props) => {
                     width="100"
                     height="80"
                     src="/ujkol-img/ujkol-logo_fv4ytx.png"
-                    sizes="100vw"
+                    className="w-auto h-auto"
                     alt="UJKOL, OFM LOGO"
                   />
                 </Link>
               </div>
               <div className="flex flex-col items-center">
                 {InfoBar()}
-                <ul className="hidden lg:flex pt-8">
+                <ul className="hidden lg:flex">
                   <li className="list-item">
                     <Link href="/about-ujkol">Universite</Link>
                     <TfiAngleDown className="tfiangledown" />
@@ -54,16 +58,45 @@ export const NavBar = (props) => {
                     <TfiAngleDown className="tfiangledown" />
                   </li>
                 </ul>
+
+                {isOpen ? (
+                  <ul className="flex flex-col absolute top-[100%]  translate-y-[0%] bg-gray-100 w-[100%] shadow-sm px-5 py-8 space-y-3">
+                    <li className="list-item">
+                      <Link href="/about-ujkol">Universite</Link>
+                      <TfiAngleDown className="tfiangledown" />
+                    </li>
+                    <li className="list-item">
+                      <Link href="/formations">Formations</Link>
+                      <TfiAngleDown className="tfiangledown" />
+                    </li>
+                    <li className="list-item">
+                      <Link href="/enseignements">Enseignements</Link>
+                      <TfiAngleDown className="tfiangledown" />
+                    </li>
+                    <li className="list-item">
+                      <Link href="/recherches">Recherches</Link>
+                      <TfiAngleDown className="tfiangledown" />
+                    </li>
+                    <li className="list-item">
+                      <Link href="/medias">Medias</Link>
+                      <TfiAngleDown className="tfiangledown" />
+                    </li>
+                    <li className="list-item">
+                      <Link href="/bibliotheque">Bibliotheque</Link>
+                    </li>
+                    <li className="list-item">
+                      <Link href="/etudiant">Etudiant</Link>
+                      <TfiAngleDown className="tfiangledown" />
+                    </li>
+                  </ul>
+                ) : (
+                  ""
+                )}
               </div>
 
-              <ul className="flex lg:hidden">
-                {/* <li className="font-bold text-white text-[12px] bg-yellow-500 p-2 rounded mr-3">
-              <Link href="#">My LOGIN</Link>
-            </li> */}
-                <li onClick={props.openDropDownMenuMobile}>
-                  <TfiAlignRight className="text-2xl font-bold text-ujkol-text cursor-pointer hover:text-yellow-500 transition-colors duration-500" />
-                </li>
-              </ul>
+              <button type="button" onClick={toggle}>
+                <TfiAlignRight className="flex lg:hidden text-2xl font-bold text-ujkol-text cursor-pointer hover:text-yellow-500 transition-colors duration-500" />
+              </button>
             </div>
           </div>
         </div>

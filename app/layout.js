@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -7,7 +7,7 @@ const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Université Jean XXIII de Kolwezi - ofm",
   description: "Université Jean XXIII de Kolwezi developpé par STI-SOFTDEV",
 };
