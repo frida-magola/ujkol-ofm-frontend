@@ -1,0 +1,12 @@
+.img-link:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 20;
+}
+
+.ujkol-box a > img:hover {
+  transform: scale(-1);
+}

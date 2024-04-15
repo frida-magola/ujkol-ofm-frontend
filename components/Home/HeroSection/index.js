@@ -2,7 +2,6 @@ import Link from "next/link";
 import "../styles/hero.css";
 import "../styles/custom-btn.css";
 import "../styles/heading.css";
-import Image from "next/image";
 
 import { MdMessage, MdCall } from "react-icons/md";
 import { TfiCommentsSmiley } from "react-icons/tfi";

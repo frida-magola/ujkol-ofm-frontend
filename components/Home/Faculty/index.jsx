@@ -81,7 +81,7 @@ const Faculty = () => {
 
           <div className="flex justify-center mt-16">
             <Link
-              href="#"
+              href="/faculty"
               className="py-4 px-6 border rounded-md border-white inline-block font-medium uppercase"
             >
               {" "}
@@ -138,7 +138,7 @@ const Faculty = () => {
                     LEARNING AMONG STUDENTS.
                   </p>
                   <Link
-                    href="#"
+                    href="/recherches"
                     className="py-4 px-6 border rounded-md border-white inline-block font-medium uppercase"
                   >
                     {" "}

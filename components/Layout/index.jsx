@@ -1,10 +1,11 @@
-import { NavBar } from "@/components/Layout/Navigations";
-import Footer from "@/components/Layout/Footer";
+import { NavBar } from "./Navigations";
+import Footer from "./Footer";
+
 export default function Layout(props) {
   return (
     <main className="text-ujkol-text">
       {/* NAVIGATION */}
-      <NavBar onClick={props.onClick} />
+      <NavBar />
       {props.children}
       {/* FOOTER */}
       <Footer />

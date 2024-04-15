@@ -43,3 +43,7 @@ main {
 section {
   @apply py-24  last-of-type:mb-0;
 }
+
+.active {
+  @apply text-ujkol-dark;
+}

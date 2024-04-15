@@ -1,14 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TfiArrowRight } from "react-icons/tfi";
+import "./Cards.css";
 
 export const Cards3ColsLink = (props) => {
   const classes = props.className
     ? props.className
-    : `h-full object-cover rounded-sm shadow-md `;
+    : `h-full object-cover rounded-sm shadow-md relative`;
   return (
-    <div className="w-full md:w-1/3 mb-4 px-2 ">
-      <Link href={props.url} className="h-48 w-full relative overflow-hidden">
+    <div className="w-full h-56 md:w-1/3 mb-4 md:px-2 relative overflow-hidden ujkol-box ">
+      <Link
+        href={props.url}
+        className="h-56 w-full md:w-1/3 relative img-link overflow-hidden "
+      >
         <Image
           src={props.img}
           height={props.height}
@@ -17,7 +21,9 @@ export const Cards3ColsLink = (props) => {
           alt={props.alt}
         />
       </Link>
-      <h3 className="-mt-5 font-semibold">{props.title}</h3>
+      <h3 className="-mt-20 font-semibold relative py-3 px-5 text-2xl z-20 text-white">
+        {props.title}
+      </h3>
     </div>
   );
 };

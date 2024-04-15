@@ -64,44 +64,44 @@ export const AproposDeUjkol = () => {
         <div className="flex -mx-2 flex-wrap mt-24">
           <div className="w-full md:w-1/3 mb-4"></div>
           <Cards3ColsLink
-            url="#"
+            url="/enseignements"
             img="/teacher.jpg"
             alt="Enseignement"
             height={400}
             width={500}
-            title="Enseignement"
+            title="Enseignements"
           />
           <Cards3ColsLink
-            url="#"
+            url="/about-ujkol"
             img="/ujkol-ouverture-2022-2023.jpg"
             alt="Universite Jean 23 de Kolwezi"
             height={400}
             width={500}
-            title="UJKOL"
+            title="Découvrez U.J.KOL"
           />
           <Cards3ColsLink
-            url="#"
+            url="/formations"
             img="/campus-life3.jpg"
-            alt="Activites academiques"
+            alt="Activités académiques"
             height={400}
             width={500}
-            title="Acativites Academiques"
+            title="Activités académiques"
           />
           <Cards3ColsLink
-            url="#"
+            url="/bibliotheque"
             img="/img-bibliotheque-1.jpg"
-            alt="Bibliotheque"
+            alt="Bibliothèque"
             height={400}
             width={500}
-            title="Bibliotheque"
+            title="Bibliothèque"
           />
           <Cards3ColsLink
-            url="#"
+            url="/inscription"
             img="/student-uj.jpg"
             alt="Inscription en ligne"
             height={250}
             width={500}
-            title="Inscription en ligne"
+            title="Inscription"
           />
         </div>
       </div>
